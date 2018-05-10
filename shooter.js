@@ -12,7 +12,7 @@ App = function()
     this.load = function()
     {
         wade.loadImage('images/spaceship.png');
-        wade.loadImage('images/bullet.png');
+        wade.loadImage('images/bull.png');
         wade.loadImage('images/enemyBullet.png');
         wade.loadImage('images/alien.png');
         wade.loadImage('images/boom.png');
@@ -83,7 +83,7 @@ App = function()
                 lastFireTime = time;
                 var shipPosition = ship.getPosition();
                 var shipSize = ship.getSprite().getSize();
-                var sprite = new Sprite('images/bullet.png');
+                var sprite = new Sprite('images/bull.png');
                 var bullet = new SceneObject(sprite, 0, shipPosition.x, shipPosition.y - shipSize.y / 2);
                 wade.addSceneObject(bullet);
                 activeBullets.push(bullet);
